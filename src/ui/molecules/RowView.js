@@ -16,7 +16,7 @@ export default function RowView({navigation, placeData}){
     },[getLocation])
 
     function onClicked(){
-        navigation.navigate('DetailScreen', {location: placeLocation});
+        navigation.navigate('DetailScreen', {location: placeLocation, data: placeData});
     }
     
     return(
@@ -52,6 +52,7 @@ export default function RowView({navigation, placeData}){
 
 
 const styles = StyleSheet.create({
+
     Gray: {
         color: '#a1a1a1'
     },

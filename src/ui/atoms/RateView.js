@@ -54,7 +54,8 @@ export default function RateView({rating}){
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff'
+      backgroundColor: 'transparent',
+      minHeight: 35
     },
     stars: {
       display: 'flex',
