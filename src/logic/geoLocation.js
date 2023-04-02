@@ -1,5 +1,6 @@
 import { getDistance }  from 'geolib';
 import * as Location from 'expo-location';
+import api_key from '../../api_key';
 
 const getOneTimeLocation = async (point, callback) => {
 
@@ -9,7 +10,7 @@ const getOneTimeLocation = async (point, callback) => {
         return;
       }
 
-      Location.setGoogleApiKey('AIzaSyD25Zwq_eXj_1VJT7g632aFZ00PNl5obUA');
+      Location.setGoogleApiKey(api_key);
 
       let myLocation = await Location.getCurrentPositionAsync({});
       
